@@ -1,0 +1,166 @@
+* {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f6f9ff;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.pad {
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.25), -8px -8px 10px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+}
+
+.kick-pad {
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+}
+
+.kick-pad.active {
+  background: rgba(0, 204, 255, 0.3);
+}
+
+.snare-pad {
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+}
+
+.snare-pad.active {
+  background: rgba(0, 255, 145, 0.3);
+}
+
+.hihat-pad {
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0.22), rgba(255, 255, 255, 0.25));
+}
+
+.hihat-pad.active {
+  background: rgba(149, 0, 255, 0.3);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 0rem;
+  min-height: 20vh;
+}
+
+header h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-size: 6rem;
+  background: -webkit-linear-gradient(white, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.track .kick,
+.track .snare,
+.track .hihat {
+  display: flex;
+  flex: 2;
+}
+
+.kick-track {
+  margin: 0;
+}
+
+.sequencer {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  background: #707070;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.play {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  background: #707070;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 3rem 0rem 1rem 0rem;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.mute.active {
+  background: #d1d1d1;
+  color: #6e6e6e;
+}
+
+.tempo {
+  margin: 1rem;
+  width: 30%;
+}
+
+.tempo p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+.tempo-slider {
+  padding: 0.2rem;
+  -webkit-appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: #585858;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+/*# sourceMappingURL=style.css.map */
